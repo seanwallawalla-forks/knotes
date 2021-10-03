@@ -54,10 +54,22 @@ generate_export_header(knotesprivate BASE_NAME knotes)
 
 target_link_libraries(knotesprivate
     PUBLIC
-    KF5::IconThemes
+        KF5::IconThemes
     PRIVATE
-    KF5::PimCommon
-    KF5::KCMUtils Grantlee5::Templates KF5::NewStuff KF5::WindowSystem Qt::PrintSupport KF5::TextWidgets KF5::I18n notesharedprivate KF5::AkonadiSearchPIM KF5::AkonadiNotes KF5::PimTextEdit KF5::AkonadiWidgets KF5::GrantleeTheme
+        notesharedprivate
+        KF5::AkonadiSearchPIM
+        KF5::AkonadiNotes
+        KF5::PimTextEdit
+        KF5::AkonadiWidgets
+        KF5::GrantleeTheme
+        KF5::Grantlee
+        KF5::PimCommon
+        KF5::KCMUtils
+        KF5::NewStuff
+        KF5::WindowSystem
+        KF5::TextWidgets
+        KF5::I18n
+        Qt::PrintSupport
     )
 
 set_target_properties(knotesprivate

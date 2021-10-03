@@ -60,7 +60,6 @@ set(AKONADI_SEARCH_VERSION "5.18.40")
 set(QT_REQUIRED_VERSION "5.15.2")
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED DBus Network PrintSupport Test Widgets Xml)
 find_package(Qt5X11Extras NO_MODULE)
-find_package(Grantlee5 "5.2" CONFIG REQUIRED)
 # Find KF5 package
 find_package(KF5Completion ${KF5_MIN_VERSION} REQUIRED)
 find_package(KF5Config ${KF5_MIN_VERSION} REQUIRED)
@@ -81,6 +80,7 @@ find_package(KF5TextWidgets ${KF5_MIN_VERSION} REQUIRED)
 find_package(KF5WidgetsAddons ${KF5_MIN_VERSION} REQUIRED)
 find_package(KF5WindowSystem ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5XmlGui ${KF5_MIN_VERSION} CONFIG REQUIRED)
+find_package(KF5Grantlee ${KF5_MIN_VERSION} CONFIG REQUIRED)
 find_package(KF5DocTools ${KF5_MIN_VERSION})
 set_package_properties(KF5DocTools PROPERTIES DESCRIPTION
     "Tools to generate documentation"
